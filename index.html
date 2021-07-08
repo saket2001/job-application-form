@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./icons8-form-48.png" type="image/x-icon">
+    <title>Job Application Form</title>
+</head>
+
+<body>
+    <form>
+        <!-- header -->
+        <div id="form_header">
+            <h1>
+                Job Application
+            </h1>
+            <p>
+                Thank you for taking the time to answer these questions. Please complete the form below to apply for a
+                position with us
+            </p>
+        </div>
+        <!-- body -->
+        <div id="form_body">
+            <!-- q1 -->
+            <div class="form__div">
+                <label for="Name">Full Name</label>
+                <div class="row">
+                    <div class="col">
+                        <input type="text">
+                        <span class="highlighted">First name</span>
+                    </div>
+                    <div class="col">
+                        <input type="text">
+                        <span class="highlighted">Middle name</span>
+                    </div>
+                    <div class="col">
+                        <input type="text">
+                        <span class="highlighted">Last name</span>
+                    </div>
+                </div>
+            </div>
+            <!-- q2 -->
+            <div class="form__div">
+                <label for="birth date">Birth Date</label>
+                <div class="row">
+                    <input type="date" id="birth date">
+                </div>
+            </div>
+            <!-- q3 -->
+            <div class="form__div">
+                <label for="Email Address">Email Address</label>
+                <div class="row">
+                    <input type="email" id="Email Address" placeholder="ex: myname@example.com">
+                </div>
+            </div>
+            <!-- q4 -->
+            <div class="form__div">
+                <label for="Name">Current Address</label>
+                <div class="col">
+                    <div class="col">
+                        <input type="text" class="long__input">
+                        <span class="highlighted">Address Line 1</span>
+                    </div>
+                    <div class="col">
+                        <input type="text">
+                        <span class="highlighted">Address Line 2</span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text">
+                            <span class="highlighted">City</span>
+                        </div>
+                        <div class="col">
+                            <input type="text">
+                            <span class="highlighted">State</span>
+                        </div>
+                        <div class="col">
+                            <input type="text">
+                            <span class="highlighted">Pin code</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- q5 -->
+            <div class="form__div">
+                <label for="contact">Contact No</label>
+                <div class="row">
+                    <input type="tel" id="contact" placeholder="+00">
+                </div>
+            </div>
+            <div class="line"></div>
+            <!-- q6 -->
+            <div class="form__div">
+                <p class="question">
+                    Job Position?
+                </p>
+                <div class="answer__block">
+                    <select name="job position">
+                        <option value="">Please Select</option>
+                        <option value="Human resource (HR)">Human resource (HR)</option>
+                        <option value="Frontend Web Development">Frontend Web Development</option>
+                        <option value="Backend Web Development">Backend Web Development</option>
+                        <option value="DevOps">DevOps</option>
+                        <option value="DevOps">Cyber Security</option>
+                        <option value="DevOps">Sales Manager</option>
+                    </select>
+
+                </div>
+            </div>
+            <!-- q7 -->
+            <div class="form__div">
+                <p class="question">
+                    Where did you hear about this job?
+                </p>
+                <div class="answer__block">
+                    <select name="job notification">
+                        <option value="">Please Select</option>
+                        <option value="Human resource (HR)">Human resource (HR)</option>
+                        <option value="LinkedIn">LinkedIn</option>
+                        <option value="Facebook ad">Facebook ad</option>
+                        <option value="Friend/Relative">Friend/Relative</option>
+                        <option value="Company Website">Company Website</option>
+                        <option value="Social Media">Social Media</option>
+                    </select>
+                </div>
+            </div>
+            <!-- q8 -->
+            <div class="form__div">
+                <label for="Start Date">Available Start Date</label>
+                <div class="row">
+                    <input type="date" id="Start Date">
+                </div>
+            </div>
+            <!-- q9 -->
+            <div class="form__div">
+                <p class="question">
+                    Why should we be hired for the selected role?
+                </p>
+                <div class="answer__block">
+                    <textarea id="q9" cols="30" rows="10" placeholder="Answer"></textarea>
+                </div>
+            </div>
+            <!-- q10 -->
+            <div class="form__div">
+                <p class="question">
+                    What is the most challenging task you did about your selected role till date?
+                </p>
+                <div class="answer__block">
+                    <textarea id="q10" cols="30" rows="10" placeholder="Answer"></textarea>
+                </div>
+            </div>
+            <!-- q11 -->
+            <div class="form__div">
+                <p class="question">
+                    Upload Your Resume
+                </p>
+                <div class="answer__block">
+                    <input type="file">
+                </div>
+            </div>
+        </div>
+        <div id="form__action">
+            <button type="submit">Submit application</button>
+        </div>
+    </form>
+    <footer>
+        This Job Application form is made by Saket Chandorkar.
+        <span class="required">Don't Try To Use It Without My Concent.</span>
+    </footer>
+</body>
+
+</html>
